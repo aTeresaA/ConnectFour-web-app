@@ -3,4 +3,4 @@
 # changed style for a more game-friendly experience
 # - nice colours
 # - board in center of screen
-# - stabilised text (no feeling of board jumping around)
+# - stabilised text (no board jumping around due to text changes)
