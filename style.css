@@ -1,22 +1,60 @@
 .grid {
-    border: 1px solid;
-    height: 120px;
-    width: 140px;
+    border: 4px solid;
+    border-color: #2c3e50; /*samma färg som i rubriktext*/
+    height: 240px;
+    width: 280px;
     display: flex;
     flex-wrap: wrap;
 }
 
+/*.grid div { 'den ursprungliga'
+    height: 40px;
+    width: 40px;
+}*/
+
 .grid div {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
+    /*border-radius: 50%; /* gör cirkel */
+    /*background-color: #e0e0e0; /* ljusgrå “tom” cirkel */
+    /*border: 1px solid #ccc; /* tunn kant för att synas */
+    /*box-sizing: border-box;*/
 }
 
 .player-one {
-    background-color: red;
-    border-radius: 10px;
+    background-color: rgb(245, 65, 41);
+    border-radius: 20px;
 }
 
 .player-two {
-    background-color: blue;
-    border-radius: 10px;
+    background-color: rgb(38, 114, 124);
+    border-radius: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* ändrar från rad till kolumn*/
+    justify-content: center; /* horisontellt */
+    align-items: center;     /* vertikalt */
+    height: 100vh;           /* fyller hela viewport höjd */
+    margin: 0;
+}
+
+h3 {
+    color: #2c3e50;            /* mörkblå/grå färg, snygg och mjuk */
+    font-size: 36px;           /* lite större än standard */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* modernt typsnitt */
+    font-variant-numeric: tabular-nums; /*siffror får samma bredd, texten slutade hoppa*/
+    font-weight: 600;          /* lite fetare utan att vara överdrivet */
+    width: 50%;                 /*tar hälften av skärmbredden*/
+    text-align: center;       /* centrerad ovanför gridden */
+    margin-bottom: 80px;       /* lite avstånd till gridden */
+    letter-spacing: 1px;       /* lite mellanrum mellan bokstäver */
+}
+
+.winner-text {
+    color: #2c3e50;
+    font-size: 50px;
+    text-align: center;
+    height: 50px; /* reserverar utrymme */
 }
