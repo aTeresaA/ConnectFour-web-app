@@ -24,4 +24,4 @@ settings.json
 *.local
 
 # privata processbeskrivande filer
-processen.txt
+private/
